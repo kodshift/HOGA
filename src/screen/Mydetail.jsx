@@ -169,9 +169,9 @@ function Mydetail() {
           <div style={{marginTop:"20px"}}>
           <div id="carouselExampleFade" className="carousel slide carousel-fade">
           <div className="carousel-inner">
-            {userData.imagePath.map((item, index) => (
+        {userData.imagePath && userData.imagePath.map((itemstore, index) => (
               <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} >
-                <img src={item} className="d-block w-75  mx-auto img-fluid" alt={`Slide ${index}`} style={{maxHeight: '390px'}} />
+                <img src={itemstore} className="d-block w-75  mx-auto img-fluid" alt={`Slide ${index}`} style={{maxHeight: '390px'}} />
               </div>
             ))}
           </div>
